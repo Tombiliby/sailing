@@ -1,0 +1,139 @@
+:root {
+
+  // Default color
+  --primary-color-h: 200;
+  --primary-color-s: 100%;
+  --primary-color-l: 55%;
+
+  // Lighten and darken
+  --lightnessTransform: 10%;
+  --darknessTransform: 15%;
+  --contrastThreshold: 50%;
+
+  --primary-color-light-l: calc(var(--primary-color-l) + var(--lightnessTransform));
+  --primary-color-dark-l: calc(var(--primary-color-l) - var(--darknessTransform));
+
+  // Complementary
+  --primary-color-complementary-h: calc(var(--primary-color-h) + 180);
+
+  // Triade 1
+  --primary-color-triade1-h: calc(var(--primary-color-h) + 154);
+
+  // Triade 2
+  --primary-color-triade2-h: calc(var(--primary-color-h) - 142);
+
+  // Colors
+  --primaryColor: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-l));
+  --primaryColor-light: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-light-l));
+  --primaryColor-dark: hsl(var(--primary-color-h), var(--primary-color-s), var(--primary-color-dark-l));
+  --primaryColor-complementary: hsl(var(--primary-color-complementary-h), var(--primary-color-s), var(--primary-color-l));
+  --primaryColor-triade1: hsl(var(--primary-color-triade1-h), var(--primary-color-s), var(--primary-color-l));
+  --primaryColor-triade2: hsl(var(--primary-color-triade2-h), var(--primary-color-s), var(--primary-color-l));
+
+}
+
+@font-face {
+  font-family: "Jostvf";
+  src: url("/Jost-VF.ttf") format("truetype");
+}
+
+body {
+  background: var(--color-primary-light);
+}
+
+.checkList {
+  font-family: "Jostvf";
+  font-size: 2vw;
+
+
+  .item {
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    font-variation-settings: "wght"373, "ital".1;
+    transition: font-variation-settings cubic-bezier(0.63, 0.25, 0.1, 1.71) .5s;
+    cursor: pointer;
+
+    &.checked {
+      background: var(--primaryColor-triade1);
+      transition: font-variation-settings cubic-bezier(0.63, 0.25, 0.1, 1.71) .5s;
+      font-variation-settings: "wght"500, "ital".1;
+      --switch: calc((var(--primary-color-l) - var(--contrastThreshold)) * -100);
+      color: hsl(0, 0%, var(--switch));
+    }
+  }
+}
+
+.colorScheme {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+
+  .item {
+    flex: 1;
+
+    &.primaryColor {
+      background: var(--primaryColor);
+      --switch: calc((var(--primary-color-l) - var(--contrastThreshold)) * -100);
+      color: hsl(0, 0%, var(--switch));
+
+      &::before {
+        content: "var(--primaryColor)";
+      }
+    }
+
+    &.primaryColor-light {
+      background: var(--primaryColor-light);
+      --switch: calc((var(--primary-color-light-l) - var(--contrastThreshold)) * -100);
+      color: hsl(0, 0%, var(--switch));
+
+      &::before {
+        content: "var(--primaryColor-light)";
+      }
+    }
+
+    &.primaryColor-dark {
+      background: var(--primaryColor-dark);
+      --switch: calc((var(--primary-color-dark-l) - var(--contrastThreshold)) * -100);
+      color: hsl(0, 0%, var(--switch));
+
+      &::before {
+        content: "var(--primaryColor-dark)";
+      }
+    }
+
+
+    &.primaryColor-triade1 {
+      background: var(--primaryColor-triade1);
+      --switch: calc((var(--primary-color-l) - var(--contrastThreshold)) * -100);
+      color: hsl(0, 0%, var(--switch));
+
+      &::before {
+        content: "var(--primaryColor-triade1)";
+      }
+    }
+
+    &.primaryColor-triade2 {
+      background: var(--primaryColor-triade2);
+      --switch: calc((var(--primary-color-l) - var(--contrastThreshold)) * -100);
+      color: hsl(0, 0%, var(--switch));
+
+      &::before {
+        content: "var(--primaryColor-triade2)";
+      }
+    }
+
+    &.primaryColor-complementary {
+      background: var(--primaryColor-complementary);
+      --switch: calc((var(--primary-color-l) - var(--contrastThreshold)) * -100);
+      color: hsl(0, 0%, var(--switch));
+
+      &::before {
+        content: "var(--primaryColor-complementary)";
+      }
+    }
+  }
+
+}
