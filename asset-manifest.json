@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/sailing/static/css/main.5f6a3729.chunk.css",
+    "main.css": "/sailing/static/css/main.a597f7db.chunk.css",
     "main.js": "/sailing/static/js/main.76861c1a.chunk.js",
     "main.js.map": "/sailing/static/js/main.76861c1a.chunk.js.map",
     "runtime-main.js": "/sailing/static/js/runtime-main.9a62e6c7.js",
@@ -8,15 +8,15 @@
     "static/js/2.9c9fdc0e.chunk.js": "/sailing/static/js/2.9c9fdc0e.chunk.js",
     "static/js/2.9c9fdc0e.chunk.js.map": "/sailing/static/js/2.9c9fdc0e.chunk.js.map",
     "index.html": "/sailing/index.html",
-    "precache-manifest.83728ad77808a644f6857cf9353bbf59.js": "/sailing/precache-manifest.83728ad77808a644f6857cf9353bbf59.js",
+    "precache-manifest.a0f997181696dda26116e8178b3c7633.js": "/sailing/precache-manifest.a0f997181696dda26116e8178b3c7633.js",
     "service-worker.js": "/sailing/service-worker.js",
-    "static/css/main.5f6a3729.chunk.css.map": "/sailing/static/css/main.5f6a3729.chunk.css.map",
+    "static/css/main.a597f7db.chunk.css.map": "/sailing/static/css/main.a597f7db.chunk.css.map",
     "static/js/2.9c9fdc0e.chunk.js.LICENSE.txt": "/sailing/static/js/2.9c9fdc0e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.9a62e6c7.js",
     "static/js/2.9c9fdc0e.chunk.js",
-    "static/css/main.5f6a3729.chunk.css",
+    "static/css/main.a597f7db.chunk.css",
     "static/js/main.76861c1a.chunk.js"
   ]
 }
