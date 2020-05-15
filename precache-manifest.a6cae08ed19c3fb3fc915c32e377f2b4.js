@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4c5720832dce46b06b88fa0338823337",
+    "revision": "00d8b5f9ceedcaaa2215e77ccad6a7af",
     "url": "/sailing/index.html"
   },
   {
-    "revision": "09e931a68d41740b0a41",
-    "url": "/sailing/static/css/main.9e9d2192.chunk.css"
+    "revision": "8c5ececedcc5c4887e2c",
+    "url": "/sailing/static/css/main.754936a3.chunk.css"
   },
   {
     "revision": "392fdc0ddb462ec12b72",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sailing/static/js/2.9c9fdc0e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "09e931a68d41740b0a41",
-    "url": "/sailing/static/js/main.142c7305.chunk.js"
+    "revision": "8c5ececedcc5c4887e2c",
+    "url": "/sailing/static/js/main.76861c1a.chunk.js"
   },
   {
     "revision": "8440634055a47ecfbab3",
