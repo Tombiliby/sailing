@@ -6,13 +6,27 @@ const ItemToCheck = ({ val, ...props }) => {
   return (
     <>
       {!isChecked ? (
-        <li onClick={() => setChecked(true)} className="item" >
-          <span>{val}</span>
-        </li >
+        <div onClick={() => setChecked(true)} className="item" >
+          <div className="contentZone">
+            <div className="checkZone">
+              <div className="check"></div>
+            </div>
+            <div className="valueZone">
+              <span>{val}</span>
+            </div>
+          </div>
+        </div >
       ) : (
-          <li onClick={() => setChecked(false)} className="item checked">
-            <span>{val}</span>
-          </li>
+          <div onClick={() => setChecked(false)} className="item checked">
+            <div className="contentZone">
+              <div className="checkZone">
+                <div className="check"></div>
+              </div>
+              <div className="valueZone">
+                <span>{val}</span>
+              </div>
+            </div>
+          </div>
         )}
     </>
   )

@@ -1,0 +1,78 @@
+@mixin palette($color-hsl, $color-l) {
+
+  --switch: calc((var(#{$color-l}) - var(--contrastThreshold)) * -100);
+
+  &::before {
+    background: var($color-hsl);
+    box-shadow: 0 0px 0px 5px inset var($color-hsl), 0 0px 0px 7px inset hsl(0, 0%, var(--switch));
+  }
+
+  &::after {
+    content: "var(#{$color-hsl})";
+  }
+}
+
+
+input[type="color"] {
+  border: 0px solid;
+  padding: 0;
+  vertical-align: middle;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+
+.colorScheme {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+
+  .item {
+    flex: 1;
+    text-align: center;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
+    }
+
+    &::after {
+      display: block;
+      font-size: 12px;
+    }
+
+    &.default {
+      @include palette(--color-default-hsl, --color-default-l);
+    }
+
+    &.variant1 {
+      @include palette(--color-variant-1-hsl, --color-variant-1-l);
+    }
+
+    &.variant2 {
+      @include palette(--color-variant-2-hsl, --color-variant-2-l);
+    }
+
+    &.variant3 {
+      @include palette(--color-variant-3-hsl, --color-variant-3-l);
+    }
+
+    &.variant4 {
+      @include palette(--color-variant-4-hsl, --color-variant-4-l);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.layoutFX {
+
+  .mainLayoutGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    position: relative;
+    z-index: 1;
+    mix-blend-mode: screen;
+
+    >.cel {
+      padding: 3vw 6vw;
+
+      &.content {
+        background-color: var(--color-white);
+      }
+
+      &.figure {
+        background-color: #F4F4F4;
+        text-align: center;
+
+        svg {
+          margin-right: 5vw;
+          width: 30vw;
+          top: 20px;
+          position: sticky;
+        }
+      }
+    }
+  }
+
+  .gradientFX {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(http://pngimg.com/uploads/drops/drops_PNG13477.png);
+    background: linear-gradient(300deg,
+        var(--color-variant-2-hsl) 0,
+        var(--color-default-hsl) 100%);
+    z-index: 0;
+  }
+}
