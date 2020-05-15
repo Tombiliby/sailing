@@ -5,7 +5,7 @@ import SetColorScheme from "./components/setColorScheme"
 function App() {
   return (
     <>
-      <div className="debbug">
+      <div className="debbug hidden">
         <div className="colorScheme" data-theme="triade">
           <div className="item default"></div>
           <div className="item variant1"></div>
