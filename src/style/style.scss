@@ -1,13 +1,15 @@
 :root {
+  // COLORS
   --color-black: #000;
   --color-white: #fff;
 
   // Default color
-  --default-color-h: 200;
+  --default-color-h: 180;
   --default-color-s: 81%; // Min : 37 Max 60
   --default-color-l: 50%; // Min : 55 Max: 32 (warning reversed)
   --contrastThreshold: 60%;
 
+  // TYPE
   --font-ital: 0; // 0 -> 2
   --font-wght: 450; // 100 -> 900
 
@@ -18,7 +20,8 @@
 
 @font-face {
   font-family: "Jostvf";
-  src: url("/Jost-VF.ttf") format("truetype");
+  //src: url("/sailing//Jost-VF.ttf") format("truetype"); -> For the deploy on github page
+  src: url("/sailing/Jost-VF.ttf") format("truetype");
 }
 
 @import "./harmonyDynamicColor/triade";
@@ -45,4 +48,9 @@ body {
 
 .hidden {
   display: none;
+}
+
+// QUIZ
+.answer.selected {
+  background: yellow;
 }
