@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/sailing/static/css/main.a597f7db.chunk.css",
-    "main.js": "/sailing/static/js/main.76861c1a.chunk.js",
-    "main.js.map": "/sailing/static/js/main.76861c1a.chunk.js.map",
+    "main.css": "/sailing/static/css/main.0a61c745.chunk.css",
+    "main.js": "/sailing/static/js/main.a07bd267.chunk.js",
+    "main.js.map": "/sailing/static/js/main.a07bd267.chunk.js.map",
     "runtime-main.js": "/sailing/static/js/runtime-main.9a62e6c7.js",
     "runtime-main.js.map": "/sailing/static/js/runtime-main.9a62e6c7.js.map",
-    "static/js/2.9c9fdc0e.chunk.js": "/sailing/static/js/2.9c9fdc0e.chunk.js",
-    "static/js/2.9c9fdc0e.chunk.js.map": "/sailing/static/js/2.9c9fdc0e.chunk.js.map",
+    "static/js/2.2493caef.chunk.js": "/sailing/static/js/2.2493caef.chunk.js",
+    "static/js/2.2493caef.chunk.js.map": "/sailing/static/js/2.2493caef.chunk.js.map",
     "index.html": "/sailing/index.html",
-    "precache-manifest.a0f997181696dda26116e8178b3c7633.js": "/sailing/precache-manifest.a0f997181696dda26116e8178b3c7633.js",
+    "precache-manifest.41e6054c8b63080f80dd41ce121ca2cc.js": "/sailing/precache-manifest.41e6054c8b63080f80dd41ce121ca2cc.js",
     "service-worker.js": "/sailing/service-worker.js",
-    "static/css/main.a597f7db.chunk.css.map": "/sailing/static/css/main.a597f7db.chunk.css.map",
-    "static/js/2.9c9fdc0e.chunk.js.LICENSE.txt": "/sailing/static/js/2.9c9fdc0e.chunk.js.LICENSE.txt"
+    "static/css/main.0a61c745.chunk.css.map": "/sailing/static/css/main.0a61c745.chunk.css.map",
+    "static/js/2.2493caef.chunk.js.LICENSE.txt": "/sailing/static/js/2.2493caef.chunk.js.LICENSE.txt",
+    "static/media/checklist.svg": "/sailing/static/media/checklist.86b77469.svg",
+    "static/media/ico_cold.svg": "/sailing/static/media/ico_cold.3dd47cb7.svg",
+    "static/media/ico_hot.svg": "/sailing/static/media/ico_hot.4133c074.svg",
+    "static/media/ico_nowind.svg": "/sailing/static/media/ico_nowind.6e797807.svg",
+    "static/media/ico_rain.svg": "/sailing/static/media/ico_rain.4e7656c4.svg",
+    "static/media/ico_sunny.svg": "/sailing/static/media/ico_sunny.beeb96cd.svg",
+    "static/media/ico_wind.svg": "/sailing/static/media/ico_wind.e7d4c6b6.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.9a62e6c7.js",
-    "static/js/2.9c9fdc0e.chunk.js",
-    "static/css/main.a597f7db.chunk.css",
-    "static/js/main.76861c1a.chunk.js"
+    "static/js/2.2493caef.chunk.js",
+    "static/css/main.0a61c745.chunk.css",
+    "static/js/main.a07bd267.chunk.js"
   ]
 }
