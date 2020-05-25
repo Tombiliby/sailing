@@ -1,6 +1,11 @@
 import React, { useState } from "react"
-import Emoji from "../utils/Emoji";
 import { hslToHex, hexToHSL } from "../utils/convertColor";
+import ico_cold from "../figures/ico_cold.svg"
+import ico_hot from "../figures/ico_hot.svg"
+import ico_rain from "../figures/ico_rain.svg"
+import ico_sunny from "../figures/ico_sunny.svg"
+import ico_nowind from "../figures/ico_nowind.svg"
+import ico_wind from "../figures/ico_wind.svg"
 
 const SetColorScheme = () => {
   const defaultHslColorVal = {
@@ -42,14 +47,14 @@ const SetColorScheme = () => {
     if (Math.sign(skyNbr) === -1) {
       // Enlève en pourcentage de la valeur de la saturation
       newSat = Number(defaultHslColor_sat) - (((skyNbr * -1) * Number(defaultHslColor_sat)) / 100)
-      newLum = Number(defaultHslColor_lum) - (((skyNbr * -1) * gapLum) / 100)
+      newLum = Number(defaultHslColor_lum) - (((skyNbr * -1) * gapLum) / 100) / 2
     } else {
       // Ajoute en pourcentage sur la partie restante (55% -> 45) de la saturation
       newSat = Number(defaultHslColor_sat) + ((skyNbr * (100 - Number(defaultHslColor_sat))) / 100)
-      newLum = Number(defaultHslColor_lum) + ((skyNbr * gapLum) / 100)
+      newLum = Number(defaultHslColor_lum) + ((skyNbr * gapLum) / 100) / 2
     }
     document.documentElement.style.setProperty(`--default-color-s`, newSat + "%")
-    document.documentElement.style.setProperty(`--default-color-l`, newLum + "%")
+    //document.documentElement.style.setProperty(`--default-color-l`, newLum + "%")
     changeDefaultHexColor(hslToHex(defaultHslColorVal.hue, newSat, newLum))
   }
 
@@ -89,14 +94,52 @@ const SetColorScheme = () => {
           <input id="colorSchemePicker" type="color" value={defaultHexColor} onChange={(e) => setTheme(e, e.target.value, "default")} />
         </div>
 
-        <label htmlFor="sliderTemperature" id="ital">Temperature <Emoji symbol="🌡" /></label>
-        <input id="sliderTemperature" min="-200" max="200" className="slider" type="range" onChange={(e) => setTemperature(e.target.value)} />
+        <div className="fieldZone temperatureZone">
+          <div className="field">
+            <input id="sliderTemperature" min="-200" max="200" className="slider" type="range" onChange={(e) => setTemperature(e.target.value)} />
+          </div>
+          <div className="labelZone">
+            <div className="icoZone">
+              <img src={ico_cold} alt="" />
+            </div>
+            <label htmlFor="sliderTemperature" id="ital">Température</label>
+            <div className="icoZone">
+              <img src={ico_hot} alt="" />
+            </div>
+          </div>
+        </div>
 
-        <label htmlFor="sliderSky" id="sky">Ciel <Emoji symbol="🌤" /></label>
-        <input id="sliderSky" className="slider" min="-100" max="100" type="range" onChange={(e) => setSky(e.target.value)} />
+        <div className="fieldZone skyZone">
+          <div className="field">
+            <input id="sliderSky" className="slider" min="-100" max="100" type="range" onChange={(e) => setSky(e.target.value)} />
+          </div>
+          <div className="labelZone">
+            <div className="icoZone">
+              <img src={ico_rain} alt="" />
+            </div>
+            <label htmlFor="sliderSky" id="sky">Ensoleillement</label>
+            <div className="icoZone">
+              <img src={ico_sunny} alt="" />
+            </div>
+          </div>
+        </div>
 
-        <label htmlFor="windTest" id="ital">Wind <Emoji symbol="🌬" /></label>
-        <input id="windTest" className="slider" min="-100" max="100" type="range" onChange={(e) => setWind(e.target.value)} />
+
+        <div className="fieldZone skyZone">
+          <div className="field">
+            <input id="windTest" className="slider" min="-100" max="100" type="range" onChange={(e) => setWind(e.target.value)} />
+          </div>
+          <div className="labelZone">
+            <div className="icoZone">
+              <img src={ico_nowind} alt="" />
+            </div>
+            <label htmlFor="windTest" id="ital">Vent</label>
+            <div className="icoZone">
+              <img src={ico_wind} alt="" />
+            </div>
+          </div>
+        </div>
+
       </div>
     </>
   )

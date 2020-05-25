@@ -1,3 +1,28 @@
+.fieldZone {
+  margin-bottom: 1vw;
+
+  .field {
+    margin-bottom: .3vw;
+  }
+
+  .labelZone {
+    display: flex;
+    align-items: center;
+
+    .icoZone {
+      img {
+        width: 1.65vw;
+      }
+    }
+
+    label {
+      font-size: 1.2vw;
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
+
 .slider {
   -webkit-appearance: none;
   width: 100%;
