@@ -11,30 +11,43 @@ const Quiz = () => {
   const questions = [
     {
       id: 1,
-      question: "C'est qui le plus beau ?",
-      answer_a: "Ton père",
-      answer_b: "Ta mère",
-      answer_c: "Ta soeur",
-      answer_d: "Je vois pas...",
-      correct_answer: "d"
+      image: "/quiz/1.png",
+      question: "Dans un chenal en Europe. De la mer vers le port, la balise verte doit marquer :",
+      answer_a: "La gauche",
+      answer_b: "Un danger isolé",
+      answer_c: "Tribord",
+      answer_d: "Un câble sous marin",
+      correct_answer: "c"
     },
     {
       id: 2,
-      question: "C'est qui le plus fort ?",
-      answer_a: "Ton père",
-      answer_b: "Ta mère",
-      answer_c: "Ta soeur",
-      answer_d: "Je vois pas...",
-      correct_answer: "d"
+      image: "/quiz/2.png",
+      question: "Règles de croisement, lorsque les voiliers reçoivent le vent d'un bord différent. Lequel doit s'écarter ?",
+      answer_a: "Les deux",
+      answer_b: "Celui qui reçois le vent bâbord",
+      answer_c: "Le plus grand voilier",
+      answer_d: "Celui qui reçoit le vent tribord",
+      correct_answer: "b"
     },
     {
       id: 3,
-      question: "C'est qui le plus intelligent ?",
-      answer_a: "Ton père",
-      answer_b: "Ta mère",
-      answer_c: "Ta soeur",
-      answer_d: "Bein je vois vraiment pas...",
-      correct_answer: "d"
+      image: "/quiz/3.png",
+      question: "Règles de croisement, lorsque les voiliers reçoivent le vent du même bord. Qui a la priorité (vire ou passe derrière) ?",
+      answer_a: "Le plus cher",
+      answer_b: "Celui qui est sous le vent",
+      answer_c: "Celui qui est au vent",
+      answer_d: "Celui qui crie le plus fort",
+      correct_answer: "c"
+    },
+    {
+      id: 4,
+      image: "/quiz/4.png",
+      question: "Vous êtes face à face, comment dévier ?",
+      answer_a: "Dévier à droite",
+      answer_b: "Dévier à gauche",
+      answer_c: "Freiner",
+      answer_d: "Celui qui crie le plus fort",
+      correct_answer: "c"
     }
   ]
 
