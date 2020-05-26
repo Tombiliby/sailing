@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/sailing/static/css/main.0a61c745.chunk.css",
-    "main.js": "/sailing/static/js/main.a07bd267.chunk.js",
-    "main.js.map": "/sailing/static/js/main.a07bd267.chunk.js.map",
+    "main.css": "/sailing/static/css/main.9e7ab2ac.chunk.css",
+    "main.js": "/sailing/static/js/main.c8d7747d.chunk.js",
+    "main.js.map": "/sailing/static/js/main.c8d7747d.chunk.js.map",
     "runtime-main.js": "/sailing/static/js/runtime-main.9a62e6c7.js",
     "runtime-main.js.map": "/sailing/static/js/runtime-main.9a62e6c7.js.map",
     "static/js/2.2493caef.chunk.js": "/sailing/static/js/2.2493caef.chunk.js",
     "static/js/2.2493caef.chunk.js.map": "/sailing/static/js/2.2493caef.chunk.js.map",
     "index.html": "/sailing/index.html",
-    "precache-manifest.41e6054c8b63080f80dd41ce121ca2cc.js": "/sailing/precache-manifest.41e6054c8b63080f80dd41ce121ca2cc.js",
+    "precache-manifest.6d1da79121a719a6e2d89a4379da85cf.js": "/sailing/precache-manifest.6d1da79121a719a6e2d89a4379da85cf.js",
     "service-worker.js": "/sailing/service-worker.js",
-    "static/css/main.0a61c745.chunk.css.map": "/sailing/static/css/main.0a61c745.chunk.css.map",
+    "static/css/main.9e7ab2ac.chunk.css.map": "/sailing/static/css/main.9e7ab2ac.chunk.css.map",
     "static/js/2.2493caef.chunk.js.LICENSE.txt": "/sailing/static/js/2.2493caef.chunk.js.LICENSE.txt",
     "static/media/checklist.svg": "/sailing/static/media/checklist.86b77469.svg",
     "static/media/ico_cold.svg": "/sailing/static/media/ico_cold.3dd47cb7.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.9a62e6c7.js",
     "static/js/2.2493caef.chunk.js",
-    "static/css/main.0a61c745.chunk.css",
-    "static/js/main.a07bd267.chunk.js"
+    "static/css/main.9e7ab2ac.chunk.css",
+    "static/js/main.c8d7747d.chunk.js"
   ]
 }
