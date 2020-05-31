@@ -1,0 +1,49 @@
+.cel {
+  background-image: linear-gradient(130deg, #F2F2F2 0%, #D8D8D8 100%);
+}
+
+.card {
+  --switch: calc((var(--color-default-l) - var(--contrastThreshold)) * -100);
+  color: hsl(0, 0%, var(--switch));
+
+  h2 {
+    color: var(--color-default);
+  }
+
+  .inner {
+    opacity: .9;
+  }
+
+  .counter {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 6vw;
+    left: -2.5vw;
+    top: 1.5vw;
+    color: lightness(var(--color-default), .2);
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(130deg, #C8CCD1, #F2F4F7 100%);
+    box-shadow: 1vw 1vw 2vw -1vw rgb(0, 0, 0),
+      inset 0.1vw 0.1vw 0.2vw 0vw rgba(255, 255, 255, 1);
+
+    .inner {
+      flex: 1;
+    }
+  }
+
+  position: relative;
+  width: clamp(0px, 50vw, 400px);
+  margin: 0 auto;
+  padding: 8vw 2vw 2vw;
+  background-color: var(--color-default);
+  border-radius: 0.8vw;
+  box-shadow: 1vw 1vw 2vw 0vw rgba(0, 0, 0, 0.4),
+  1vw 1vw 1.3vw -1vw rgba(0, 0, 0, 0.5),
+  inset -0.1vw -0.1vw 0.4vw -0.1vw rgba(0, 0, 0, 0.5),
+  inset -6vw -6vw 6vw -6vw rgba(0, 0, 0, .3);
+  background-image: linear-gradient(130deg, lightness(var(--color-default), .4),
+    lightness(var(--color-default), .2) 100%)
+}

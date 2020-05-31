@@ -6,7 +6,7 @@
     grid-template-rows: auto;
     position: relative;
     z-index: 1;
-    mix-blend-mode: screen;
+    //mix-blend-mode: screen;
 
     >.cel {
       padding: 3vw 6vw;
@@ -39,8 +39,8 @@
     height: 100%;
     background-image: url(http://pngimg.com/uploads/drops/drops_PNG13477.png);
     background: linear-gradient(300deg,
-        var(--color-variant-2-hsl) 0,
-        var(--color-default-hsl) 100%);
+        var(--color-variant-2) 0,
+        var(--color-default) 100%);
     z-index: 0;
   }
 }

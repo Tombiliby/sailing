@@ -1,14 +1,25 @@
+@mixin defineColorHSL($color, $hue, $saturation, $lightness) {
+  #{$color}: unquote("hsl(#{$hue}, #{$saturation}, #{$lightness})");
+  #{$color}-h: #{$hue};
+  #{$color}-s: #{$saturation};
+  #{$color}-l: #{$lightness};
+}
+
 :root {
   // COLORS
   --color-black: #000;
   --color-white: #fff;
 
   // Default color
+  @include defineColorHSL(--default-color, 180, 81%, 50%);
+  --contrastThreshold: 60%;
+  /*
+  --default-color-hex: #18e7e7;
   --default-color-h: 180;
   --default-color-s: 81%; // Min : 37 Max 60
   --default-color-l: 50%; // Min : 55 Max: 32 (warning reversed)
-  --contrastThreshold: 60%;
 
+*/
   // TYPE
   --font-ital: 0; // 0 -> 2
   --font-wght: 450; // 100 -> 900
@@ -18,6 +29,8 @@
 
 }
 
+$default-color: var(--default-color-hex);
+
 @font-face {
   font-family: "Jostvf";
   //src: url("/sailing//Jost-VF.ttf") format("truetype"); -> For the deploy on github page
@@ -25,11 +38,13 @@
 }
 
 @import "./harmonyDynamicColor/triade";
+@import "./functions/colors";
 @import "./components/layout";
 @import "./components/type";
 @import "./harmonyDynamicColor/similar";
 @import "./components/rangeSlider";
 @import "./components/checkList";
+@import "./components/card";
 @import "./mixins/palette";
 
 // FX gradient
@@ -37,7 +52,7 @@ body {
   position: relative;
   color: #000;
   font-family: "Jostvf";
-  font-size: 1.25vw;
+  font-size: clamp(14px, 1.25vw, 22px); // Good => clamp(14px, (1rem + 1.25vw), 22px)
 }
 
 .quizFigure {
@@ -57,4 +72,37 @@ body {
 // QUIZ
 .answer.selected {
   background: yellow;
+}
+
+
+
+.fade-enter,
+.fade-enter .btn {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.fade-enter-active,
+.fade-enter-active .btn {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.fade-exit,
+.fade-exit .btn {
+  opacity: 1;
+  transform: translateX(0%);
+}
+
+.fade-exit-active,
+.fade-exit-active .btn {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.fade-enter-active,
+.fade-exit-active,
+.fade-enter-active .btn,
+.fade-exit-active .btn {
+  transition: opacity 500ms, transform 500ms;
 }

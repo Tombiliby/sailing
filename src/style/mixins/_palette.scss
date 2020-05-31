@@ -1,7 +1,7 @@
 @mixin palette($color-hsl, $color-l) {
 
   --switch: calc((var(#{$color-l}) - var(--contrastThreshold)) * -100);
-
+  
   &::before {
     background: var($color-hsl);
     box-shadow: 0 0px 0px 5px inset var($color-hsl), 0 0px 0px 7px inset hsl(0, 0%, var(--switch));
@@ -56,23 +56,23 @@ input[type="color"]::-webkit-color-swatch {
     }
 
     &.default {
-      @include palette(--color-default-hsl, --color-default-l);
+      @include palette(--color-default, --color-default-l);
     }
 
     &.variant1 {
-      @include palette(--color-variant-1-hsl, --color-variant-1-l);
+      @include palette(--color-variant-1, --color-variant-1-l);
     }
 
     &.variant2 {
-      @include palette(--color-variant-2-hsl, --color-variant-2-l);
+      @include palette(--color-variant-2, --color-variant-2-l);
     }
 
     &.variant3 {
-      @include palette(--color-variant-3-hsl, --color-variant-3-l);
+      @include palette(--color-variant-3, --color-variant-3-l);
     }
 
     &.variant4 {
-      @include palette(--color-variant-4-hsl, --color-variant-4-l);
+      @include palette(--color-variant-4, --color-variant-4-l);
     }
   }
 }

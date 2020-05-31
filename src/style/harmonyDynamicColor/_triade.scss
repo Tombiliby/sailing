@@ -22,9 +22,9 @@
   --color-variant-4-l: calc(var(--color-default-l) + 0%);
 
   // Hue saturation lightness
-  --color-default-hsl: hsl(var(--color-default-h), var(--color-default-s), var(--color-default-l));
-  --color-variant-1-hsl: hsl(var(--color-variant-1-h), var(--color-variant-1-s), var(--color-variant-1-l));
-  --color-variant-2-hsl: hsl(var(--color-variant-2-h), var(--color-variant-2-s), var(--color-variant-2-l));
-  --color-variant-3-hsl: hsl(var(--color-variant-3-h), var(--color-variant-3-s), var(--color-variant-3-l));
-  --color-variant-4-hsl: hsl(var(--color-variant-4-h), var(--color-variant-4-s), var(--color-variant-4-l));
+  --color-default: hsl(var(--color-default-h), var(--color-default-s), var(--color-default-l));
+  --color-variant-1: hsl(var(--color-variant-1-h), var(--color-variant-1-s), var(--color-variant-1-l));
+  --color-variant-2: hsl(var(--color-variant-2-h), var(--color-variant-2-s), var(--color-variant-2-l));
+  --color-variant-3: hsl(var(--color-variant-3-h), var(--color-variant-3-s), var(--color-variant-3-l));
+  --color-variant-4: hsl(var(--color-variant-4-h), var(--color-variant-4-s), var(--color-variant-4-l));
 }
