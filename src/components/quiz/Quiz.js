@@ -136,11 +136,20 @@ const Quiz = () => {
     return (
       <>
         <QuizContext.Provider value={{ state, dispatch }}>
-          <Progress total={questions.length} current={currentQuestion + 1} />
-          <Question />
-          {renderError()}
+
           <Answers />
           <button onClick={next}>Confirm and continue</button>
+          <div className="card" >
+
+
+                <Progress total={questions.length} current={currentQuestion + 1} />
+
+            <div className="inner">
+              <Question />
+              {renderError()}
+            </div>
+          </div>
+
         </QuizContext.Provider>
       </>
     )

@@ -8,8 +8,8 @@ const Question = () => {
 
   return (
     <>
-      <img class="quizFigure" src={process.env.PUBLIC_URL + question.image} alt={question.question} />
-      <h4>{question.question}</h4>
+      <img className="quizFigure" src={process.env.PUBLIC_URL + question.image} alt={question.question} />
+      <p>{question.question}</p>
     </>
   )
 }

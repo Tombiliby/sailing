@@ -3,6 +3,8 @@ import Checklist from "./components/checklist/checklist"
 import SetColorScheme from "./components/setColorScheme"
 import figureChecklist from "./figures/checklist.svg";
 import Quiz from "./components/quiz/Quiz"
+//import Playlist from "./components/playlist/Playlist"
+import Card from "./components/Card"
 
 
 function App() {
@@ -28,9 +30,14 @@ function App() {
       <div className="layoutFX" data-theme="triade">
         <div className="mainLayoutGrid">
           <div className="cel content">
+            <Card />
+          </div>
+          <div className="cel content">
             <Quiz />
           </div>
-
+          <div className="cel content">
+            {/*<Playlist />*/}
+          </div>
           <div className="cel content">
             <SetColorScheme />
           </div>
