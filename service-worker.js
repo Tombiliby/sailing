@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sailing/precache-manifest.a7bb9a9c4ca8933c847123fff0c4e8ac.js"
+  "/sailing/precache-manifest.572e77ffb19cc9944dff197e9db37453.js"
 );
 
 self.addEventListener('message', (event) => {
