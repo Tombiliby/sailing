@@ -1,0 +1,20 @@
+.mainLayoutGrid {
+  .sectionMainTitle {
+    align-self: center;
+    text-align: center;
+
+    >.inner {
+      height: 100vh;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      .h1 {
+        flex: 1;
+      }
+    }
+
+    .item1 {
+      font-variation-settings: "wght"640, "ital"var(--font-ital-title);
+    }
+  }
+}

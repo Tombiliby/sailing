@@ -1,0 +1,30 @@
+.quizZone {
+  .answerListZone {
+    .answerList {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 2vw;
+
+      .item {
+        border: 0.25vw solid #fff;
+        border-radius: 10px;
+        padding: 1vw;
+        transition: all .1s ease;
+        box-shadow: 6vw 0vw 0vw 0vw rgba(0, 0, 0, 0),
+        6vw 0vw 0vw -10vw rgba(255, 255, 255, 0);
+
+        &:hover,
+        &.checked {
+          transition: all .8s ease;
+          box-shadow: 6vw 0vw 0vw 50vw rgba(255, 255, 255, 0.377),
+          6vw 0vw 0vw 100vw rgba(255, 255, 255, 0.377),
+          6vw 0vw 0vw 200vw rgba(255, 255, 255, 0.377);
+          /*
+          box-shadow: 1vw 1vw 2vw -1vw rgb(0, 0, 0),
+            inset 0.1vw 0.1vw 0.2vw 0vw rgba(255, 255, 255, 1);
+            */
+        }
+      }
+    }
+  }
+}

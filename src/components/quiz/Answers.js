@@ -9,8 +9,8 @@ const Anwsers = () => {
 
   return (
     <>
-      <div className="checkListZone">
-        <div className="checkList">
+      <div className="answerListZone">
+        <div className="answerList">
           <Answer letter="a" answer={question.answer_a} selected={currentAnswer === "a"} dispatch={dispatch} />
           <Answer letter="b" answer={question.answer_b} selected={currentAnswer === "b"} dispatch={dispatch} />
           <Answer letter="c" answer={question.answer_c} selected={currentAnswer === "c"} dispatch={dispatch} />

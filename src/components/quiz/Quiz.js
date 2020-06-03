@@ -12,6 +12,7 @@ const Quiz = () => {
     {
       id: 1,
       image: "/quiz/1.png",
+      category: "Signalisation",
       question: "Dans un chenal en Europe. De la mer vers le port, la balise verte doit marquer :",
       answer_a: "La gauche",
       answer_b: "Un danger isolé",
@@ -22,6 +23,7 @@ const Quiz = () => {
     {
       id: 2,
       image: "/quiz/2.png",
+      category: "Signalisation",
       question: "Règles de croisement, lorsque les voiliers reçoivent le vent d'un bord différent. Lequel doit s'écarter ?",
       answer_a: "Les deux",
       answer_b: "Celui qui reçois le vent bâbord",
@@ -32,6 +34,7 @@ const Quiz = () => {
     {
       id: 3,
       image: "/quiz/3.png",
+      category: "Signalisation",
       question: "Règles de croisement, lorsque les voiliers reçoivent le vent du même bord. Qui a la priorité (vire ou passe derrière) ?",
       answer_a: "Le plus cher",
       answer_b: "Celui qui est sous le vent",
@@ -42,6 +45,7 @@ const Quiz = () => {
     {
       id: 4,
       image: "/quiz/4.png",
+      category: "Signalisation",
       question: "Vous êtes face à face, comment dévier ?",
       answer_a: "Dévier à droite",
       answer_b: "Dévier à gauche",
@@ -127,7 +131,9 @@ const Quiz = () => {
   if (showResults) {
     return (
       <div className="resultsZone">
-        <h2>Results</h2>
+        <div className="titleZone">
+          <h2 className="h2">Results</h2>
+        </div>
         {renderResultsData()}
         <button onClick={restart}>Restart</button>
       </div>
@@ -136,20 +142,19 @@ const Quiz = () => {
     return (
       <>
         <QuizContext.Provider value={{ state, dispatch }}>
-
-          <Answers />
-          <button onClick={next}>Confirm and continue</button>
-          <div className="card" >
-
-
+          <div className="quizZone">
+            <div className="cardZone">
+              <div className="card" >
                 <Progress total={questions.length} current={currentQuestion + 1} />
-
-            <div className="inner">
-              <Question />
-              {renderError()}
+                <div className="inner">
+                  <Question />
+                  {renderError()}
+                </div>
+              </div>
             </div>
+            <Answers />
+            <button onClick={next}>Confirm and continue</button>
           </div>
-
         </QuizContext.Provider>
       </>
     )

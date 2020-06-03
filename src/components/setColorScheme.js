@@ -87,8 +87,9 @@ const SetColorScheme = () => {
     <>
 
       <div className="colorSchemePickerZone">
-
-        <h2>Quelle météo</h2>
+        <div className="titleZone">
+          <h2 className="h2">Quelle météo</h2>
+        </div>
         <div className="hidden">
           <label htmlFor="colorSchemePicker">Color scheme</label>
           <input id="colorSchemePicker" type="color" value={defaultHexColor} onChange={(e) => setTheme(e, e.target.value, "default")} />
