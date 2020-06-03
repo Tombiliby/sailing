@@ -12,7 +12,9 @@ const Playlist = () => {
 
   return (
     <>
-      <h2>Playlist</h2>
+      <div className="titleZone">
+        <h2 className="h2">Playlist</h2>
+      </div>
       <SpotifyPlayer
         uri="spotify:playlist:5GgzOd1oVqgWgqSV0DE4DC"
         size={size}

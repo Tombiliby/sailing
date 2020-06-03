@@ -11,7 +11,8 @@
   --color-white: #fff;
 
   // Default color
-  @include defineColorHSL(--default-color, 180, 81%, 50%);
+  //@include defineColorHSL(--default-color, 230, 75%, 42%);
+  @include defineColorHSL(--default-color, 208, 42%, 54%);
   --contrastThreshold: 60%;
   /*
   --default-color-hex: #18e7e7;
@@ -45,6 +46,8 @@ $default-color: var(--default-color-hex);
 @import "./components/rangeSlider";
 @import "./components/checkList";
 @import "./components/card";
+@import "./components/mainTitle";
+@import "./components/quiz";
 @import "./mixins/palette";
 
 // FX gradient

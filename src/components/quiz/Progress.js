@@ -2,7 +2,6 @@ import React from "react"
 import { SwitchTransition, CSSTransition } from "react-transition-group"
 
 const Progress = (props) => {
-  const nodeRef = React.useRef(null);
 
   return (
     <>

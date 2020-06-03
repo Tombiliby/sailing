@@ -1,26 +1,32 @@
-.layoutFX {
-
   .mainLayoutGrid {
     display: grid;
     grid-template-columns: 1.618fr 1fr;
     grid-template-rows: auto;
     position: relative;
     z-index: 1;
-    //mix-blend-mode: screen;
+    mix-blend-mode: screen;
 
     >.cel {
-      padding: 3vw 6vw;
-
-      &.content {
-        background-color: var(--color-white);
-        margin: 1vw 1vw 0 1vw;
-        border-radius: 1vw;
+      >.inner {
+        padding: 3vw 6vw;
       }
 
-      &.figure {
+      &:nth-of-type(2n) {
         background-color: #F4F4F4;
-        text-align: center;
+        background-image: linear-gradient(130deg, #F2F2F2 0%, #D8D8D8 100%);
 
+      }
+
+      &:nth-of-type(2n+1) {
+        color: #fff;
+      }
+
+      .sticky {
+        position: sticky;
+        top: 0px;
+      }
+
+      .figureZone {
         img {
           margin-right: 5vw;
           width: calc(100% - 5vw);
@@ -28,6 +34,7 @@
           position: sticky;
         }
       }
+
     }
   }
 
@@ -41,6 +48,9 @@
     background: linear-gradient(300deg,
         var(--color-variant-2) 0,
         var(--color-default) 100%);
+    background-image: url(http://pngimg.com/uploads/drops/drops_PNG13477.png);
+    background: linear-gradient(300deg,
+        #2d0202 0,
+        var(--color-default) 100%);
     z-index: 0;
   }
-}
