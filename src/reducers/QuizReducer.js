@@ -1,4 +1,4 @@
-import { SET_ANSWERS, SET_CURRENT_ANSWER, SET_CURRENT_QUESTION, SET_ERROR, SET_SHOW_RESULTS, RESET_QUIZ } from "./types"
+import { SET_ANSWERS, SET_CURRENT_ANSWER, SET_CURRENT_QUESTION, SET_ERROR, SET_SHOW_RESULTS, START_QUIZ, RESET_QUIZ } from "./types"
 
 function quizReducer(state, action) {
   switch (action.type) {
@@ -26,6 +26,11 @@ function quizReducer(state, action) {
       return {
         ...state,
         answers: action.answers
+      }
+    case START_QUIZ:
+      return {
+        ...state,
+        startQuiz: action.startQuiz
       }
     case RESET_QUIZ:
       return {

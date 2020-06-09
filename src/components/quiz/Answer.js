@@ -16,12 +16,11 @@ const Anwser = (props) => {
     <>
       <div data-value={props.letter} className={classes.join(" ")} onClick={handleClick} >
         <div className="contentZone">
-          <div className="checkZone">
-            <div className="check"></div>
+          <div className="letterZone">
+            <span className="letter">{props.letter}</span>
           </div>
           <div className="valueZone">
-            <span>{props.letter}</span>
-            <span>{props.answer}</span>
+            <span className="answer">{props.answer}</span>
           </div>
         </div>
       </div>
