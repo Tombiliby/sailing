@@ -1,0 +1,13 @@
+.sectionWeather {
+  align-self: center;
+
+  >.inner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .colorSchemePickerZone {
+      flex: 1;
+    }
+  }
+}

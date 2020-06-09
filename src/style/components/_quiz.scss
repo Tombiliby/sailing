@@ -1,4 +1,16 @@
+.mainLayoutGrid .sectionQuiz {
+  >.inner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+}
+
 .quizZone {
+  margin-top: -20vh;
+  width: 100%;
+
   .answerListZone {
     .answerList {
       display: grid;
@@ -11,20 +23,79 @@
         padding: 1vw;
         transition: all .1s ease;
         box-shadow: 6vw 0vw 0vw 0vw rgba(0, 0, 0, 0),
-        6vw 0vw 0vw -10vw rgba(255, 255, 255, 0);
+          6vw 0vw 0vw -10vw rgba(255, 255, 255, 0);
+        cursor: pointer;
 
-        &:hover,
+        .contentZone {
+          display: flex;
+          align-items: center;
+          height: 100%;
+
+          .letterZone {
+            margin-right: 1vw;
+
+            .letter {
+              text-transform: uppercase;
+              line-height: 2vw;
+              background: var(--color-white);
+              display: inline-block;
+              color: var(--color-black);
+              font-size: 1vw;
+              width: 2vw;
+              height: 2vw;
+              border-radius: 100%;
+              text-align: center;
+              line-height: 2vw;
+              z-index: 1;
+              background: linear-gradient(130deg, #C8CCD1, #F2F4F7 100%);
+              box-shadow: 1vw 1vw 2vw -1vw black, inset 0.1vw 0.1vw 0.2vw 0vw white;
+              font-variation-settings: "wght"700;
+              transition: all .3s ease;
+
+            }
+          }
+
+          .valueZone {
+            flex: 1;
+          }
+        }
+
+        &:hover {
+          transition: all .3s ease;
+          background: rgba(255, 255, 255, 0.2);
+        }
+
         &.checked {
-          transition: all .8s ease;
-          box-shadow: 6vw 0vw 0vw 50vw rgba(255, 255, 255, 0.377),
-          6vw 0vw 0vw 100vw rgba(255, 255, 255, 0.377),
-          6vw 0vw 0vw 200vw rgba(255, 255, 255, 0.377);
-          /*
-          box-shadow: 1vw 1vw 2vw -1vw rgb(0, 0, 0),
-            inset 0.1vw 0.1vw 0.2vw 0vw rgba(255, 255, 255, 1);
-            */
+          transition: all .3s ease;
+          background: #fff;
+          color: #000;
+
+          .letterZone {
+            .letter {
+              transition: all .5s ease;
+              background: #000;
+              color: #fff;
+              box-shadow: none;
+            }
+          }
         }
       }
     }
   }
+
+  .actionZone {
+    height: 5vw;
+    margin-top: 2vw;
+
+    .btn_validAnswer {
+      text-align: center;
+      padding: 1vw;
+      border-radius: 3vw;
+      text-align: center;
+      color: hsl(var(--color-default-h), var(--color-default-s), calc(var(--color-default-l) * 0.2));
+      background: linear-gradient(130deg, #C8CCD1, #F2F4F7 100%);
+      box-shadow: 1vw 1vw 2vw -1vw black, inset 0.1vw 0.1vw 0.2vw 0vw white;
+    }
+  }
+
 }
