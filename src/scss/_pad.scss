@@ -1,0 +1,15 @@
+.pad {
+  background: linear-gradient(141.18deg, #F7F7F7 0%, #FFFFFF 104.98%);
+  box-shadow: -5px -5px 15px #FFFFFF, 10px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding: 1.5vw;
+
+  .figureZone {
+    margin-bottom: 1.5vw;
+
+    img,
+    svg {
+      width: 100%;
+    }
+  }
+}

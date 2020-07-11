@@ -159,13 +159,11 @@ const Quiz = () => {
         <QuizContext.Provider value={{ state, dispatch }}>
           <div className="quizZone">
             <div className="cardZone">
-              <div className="card" >
-                <Progress total={questions.length} current={currentQuestion + 1} />
-                <div className="inner">
+            <Progress total={questions.length} current={currentQuestion + 1} />
+
                   <Question />
                   {renderError()}
-                </div>
-              </div>
+
             </div>
             <Answers />
             <div className="actionZone">

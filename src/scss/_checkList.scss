@@ -1,0 +1,30 @@
+.checkList {
+
+  .item {
+    display: flex;
+    align-items: center;
+    border-radius: .5vw;
+    margin-bottom: .5vw;
+    background: rgb(255, 255, 255);
+
+    .col {
+      >.inner {
+        padding: 1vw 0 1vw 1vw;
+      }
+
+      &.checkZone {}
+
+      &.bodyZone {
+        flex: 1;
+
+        .h3 {
+          margin: 0;
+        }
+      }
+    }
+
+    &.checked {
+      background: rgba(23, 44, 98, 0.03);
+    }
+  }
+}

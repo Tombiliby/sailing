@@ -3,31 +3,32 @@ import React, { useState } from "react"
 const ItemToCheck = ({ val, ...props }) => {
   const [isChecked, setChecked] = useState(false)
 
+  function toggle() {
+    setChecked(!isChecked)
+  }
+
   return (
     <>
-      {!isChecked ? (
-        <div onClick={() => setChecked(true)} className="item" >
-          <div className="contentZone">
-            <div className="checkZone">
-              <div className="check"></div>
-            </div>
-            <div className="valueZone">
-              <span>{val}</span>
+      <div onClick={toggle} className={isChecked ? "item checked" : "item"}>
+        <div className="col checkZone">
+          <div className="inner">
+            <div className="check"></div>
+            {isChecked ? (
+              <div className="check">X</div>
+            ) : (
+                <div className="check">O</div>
+              )}
+
+          </div>
+        </div>
+        <div className="col bodyZone">
+          <div className="inner">
+            <div className="name">
+              {val}
             </div>
           </div>
-        </div >
-      ) : (
-          <div onClick={() => setChecked(false)} className="item checked">
-            <div className="contentZone">
-              <div className="checkZone">
-                <div className="check"></div>
-              </div>
-              <div className="valueZone">
-                <span>{val}</span>
-              </div>
-            </div>
-          </div>
-        )}
+        </div>
+      </div>
     </>
   )
 }

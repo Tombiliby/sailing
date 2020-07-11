@@ -1,3 +1,10 @@
+body {
+  color: #172C62;
+  font-family: "Jostvf";
+  //font-size: clamp(14px, 1.25vw, 22px); // Good => clamp(14px, (1rem + 1.25vw), 22px)
+  font-size: 1.25vw;
+}
+
 .h1 {
   font-size: 4vw;
   font-variation-settings: "wght"50, "ital"var(--font-ital-title);
@@ -13,5 +20,5 @@
   margin-bottom: 2vw;
   font-variation-settings: "wght"var(--font-wght-title), "ital"var(--font-ital-title);
   line-height: 1.1;
-  //filter: url(#noise2);
+  text-transform: uppercase;
 }

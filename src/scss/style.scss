@@ -1,0 +1,18 @@
+@import "./fontFace";
+@import "./layout";
+@import "./sideBar";
+@import "./type";
+@import "./pad";
+@import "./checkList";
+
+// reset box-sizing to border-box
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}

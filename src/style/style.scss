@@ -32,16 +32,11 @@
 
 $default-color: var(--default-color-hex);
 
-@font-face {
-  font-family: "Jostvf";
-  //src: url("/sailing//Jost-VF.ttf") format("truetype"); -> For the deploy on github page
-  src: url("/sailing/Jost-VF.ttf") format("truetype");
-}
+
 
 @import "./harmonyDynamicColor/triade";
 @import "./functions/colors";
 @import "./components/layout";
-@import "./components/type";
 @import "./harmonyDynamicColor/similar";
 @import "./components/rangeSlider";
 @import "./components/checkList";
@@ -51,20 +46,23 @@ $default-color: var(--default-color-hex);
 @import "./components/weather";
 @import "./mixins/palette";
 
+@import "../scss/style.scss";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+
 
 // FX gradient
-body {
+
+
+.mainNav {
   position: relative;
-  color: #000;
-  font-family: "Jostvf";
-  //font-size: clamp(14px, 1.25vw, 22px); // Good => clamp(14px, (1rem + 1.25vw), 22px)
-  font-size: 1.25vw;
+  background: #fff;
+  z-index: 2;
+  width: 100%;
+  padding: 2vw;
+
+  a {
+    margin-right: 2vw;
+  }
 }
 
 .quizFigure {
@@ -119,4 +117,26 @@ body {
 .fade-enter-active .btn,
 .fade-exit-active .btn {
   transition: opacity 500ms, transform 500ms;
+}
+
+
+// https://www.shapedivider.app/
+.custom-shape-divider-top-1591970053 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1591970053 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 114px;
+}
+
+.custom-shape-divider-top-1591970053 .shape-fill {
+  fill: #FFFFFF;
 }

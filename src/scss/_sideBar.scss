@@ -1,0 +1,10 @@
+.sideBar {
+  position: sticky;
+  background: aqua;
+  height: 100vh;
+  top: 0;
+
+  >.inner {
+    padding: 1.5vw;
+  }
+}
