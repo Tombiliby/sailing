@@ -2,7 +2,7 @@ import React from "react"
 import { SwitchTransition, CSSTransition } from "react-transition-group"
 
 const Progress = (props) => {
-
+  console.log(props)
   return (
     <>
       <SwitchTransition mode="out-in">

@@ -1,0 +1,59 @@
+{
+  "material": {
+    "title": "Materiel",
+    "list": [
+      "Des chaussures fermées qui ne craignent pas l'eau et à semelle blanche (pour ne pas marquer le pont)",
+      "Veste de quart ou coupe vent",
+      "Crème solaire et lunettes de soleil",
+      "Casquette ou chapeau",
+      "Sac de couchage + serviette de toilette",
+      "Pull ou polaire",
+      "Anti-moustiques,",
+      "Jeux de carte, tarot, yams...",
+      "Boules quies",
+      "Lunette de soleil et de quoi les attacher si besoin",
+      "Masque et tuba",
+      "Cd (sur à 100% qu'il y ait un lecteur cd, pas sur pour USB) / tel portable avec de la musique",
+      "Matériel de pêche"
+    ]
+  },
+  "checkup": {
+    "title": "Checkup",
+    "list": [
+      "Couteau",
+      "Démanilleur ",
+      "Matossage ",
+      "Plein d'eau",
+      "Batteries chargées",
+      "Ravitaillement ",
+      "Feu de navigation ",
+      "Lampe torche",
+      "Plein d'essence",
+      "Vanne d'eau moteur ouverte",
+      "Cheuveux attachés",
+      "Définir le plan d'eau au vent",
+      "Vérifier le fond des cales",
+      "Test VHF",
+      "Verifier l'essence",
+      "Hublots fermés",
+      "Vanne fermées",
+      "Aussière en double",
+      "Météo",
+      "Hauteur des marées",
+      "Avertir son \"ange\"",
+      "Déplacer les parbatages",
+      "Clocher les drisses ",
+      "Ouvrir le taud de grand voile",
+      "Préparer les ris",
+      "Dépriser",
+      "Enlever les caches des instruments",
+      "Verifier les instruments de navigation",
+      "Mise en place du pilote auto",
+      "Mise en place de l'écoute de génois ",
+      "Activer la batterie moteur",
+      "Ranger la porte",
+      "Définir un plan d'appareillage",
+      "Sortir la manivelle de winch"
+    ]
+  }
+}
